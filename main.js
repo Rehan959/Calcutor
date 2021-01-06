@@ -1,3 +1,4 @@
+// getting all the buttons from html
 const o_b = document.querySelector("#o_b");
 const c_b = document.querySelector("#c_b");
 const c = document.querySelector("#c");
@@ -20,6 +21,7 @@ const Divide = document.querySelector("#Divide");
 const Equal = document.querySelector("#Equal");
 const P = document.querySelector("p");
 const del = document.querySelector("#del");
+// making them all to store in a variable
 let storage = "";
 
 let buttons = document.querySelectorAll("button");
@@ -29,6 +31,7 @@ buttons.forEach((button) => {
     if (e.target.innerText === c.innerText) {
       P.innerText = "";
       storage = "";
+      // delte procees
     } else if (e.target.innerText === del.innerText) {
       let lenght = storage.length;
       let slice = storage.slice(0, lenght - 1);
